@@ -328,16 +328,15 @@
               <div class="footer-widget footer-widget__about-widget">
                 <a href="index.html" class="footer-widget__logo">
                   <img
-                    src="assets/images/logo-light.png"
+                    src="assets/images/KDF/logo.png"
                     alt=""
                     width="105"
-                    height="43"
+                    height="65"
                   />
                 </a>
                 <p class="thm-text-dark">
-                  Atiam rhoncus sit amet adip scing sed ipsum. Lorem ipsum dolor
-                  sit amet adipiscing <br />
-                  sem neque.
+                  Freshly salted, sun-dried fish with authentic flavor. Taste
+                  the tradition.
                 </p>
               </div>
               <!-- /.footer-widget -->
@@ -473,9 +472,38 @@
     </div>
     <!-- /.mobile-nav__wrapper -->
 
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"
-      ><i class="fa fa-angle-up"></i
-    ></a>
+    <!-- WhatsApp Logo -->
+    <a
+      href="https://wa.me/yourphonenumber"
+      target="_blank"
+      class="whatsapp-link"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+        class="whatsapp-logo"
+      />
+    </a>
+
+    <!-- Scroll-to-Top Button -->
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- CSS -->
+    <style>
+      .whatsapp-link {
+        position: fixed;
+        bottom: 100px; /* Adjust this value to place it above the scroll-to-top button */
+        right: 37px; /* Align with the scroll-to-top button */
+        z-index: 1000;
+      }
+
+      .whatsapp-logo {
+        width: 50px; /* Adjust size as needed */
+        height: 50px;
+      }
+    </style>
 
     <script src="assets/vendors/jquery/jquery-3.5.1.min.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
