@@ -1294,7 +1294,7 @@
   --special-font: 'Abril Fatface', cursive;
   --thm-color: #717573;
   --thm-color-rgb: 113, 117, 115;
-  --thm-base: #60be74;
+  --thm-base: #b23b00;
   --thm-base-rgb: 96, 190, 116;
   --thm-primary: #f7c35f;
   --thm-primary-rgb: 247, 195, 95;
@@ -1414,6 +1414,7 @@ h6 {
 
 .thm-btn {
   display: inline-block;
+  border-radius: 30px;
   vertical-align: middle;
   -webkit-appearance: none;
   border: none;
@@ -1474,7 +1475,6 @@ h6 {
 .block-title__decor {
   width: 21px;
   height: 14px;
-  background-image: url(../images/shapes/leaf-1-1.png);
   background-repeat: no-repeat;
   background-position: top center;
   display: inline-block;
@@ -2801,7 +2801,6 @@ h6 {
   content: '';
   width: 147px;
   height: 126px;
-  background-image: url(../images/shapes/slider-1-leaf.png);
   background-repeat: no-repeat;
   position: absolute;
   bottom: 50%;
@@ -2812,7 +2811,6 @@ h6 {
   content: '';
   width: 72px;
   height: 63px;
-  background-image: url(../images/shapes/slider-1-line.png);
   background-repeat: no-repeat;
   position: absolute;
   bottom: 55%;
@@ -4957,66 +4955,60 @@ h6 {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials-one {
-  padding-bottom: 30px;
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 @media (min-width: 1200px) {
   .testimonials-one {
-    padding-bottom: 60px;
+    padding: 80px 40px;
   }
 }
 
 .testimonials-one .thm-tiny__slider:not(.tns-slider) {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-gap: 40px;
 }
 
 .testimonials-one__head {
-  background-image: url(../images/shapes/testimonials-head-1-1.png);
+  background-image: url(../images/shapes/testi.png);
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-color: #f4f4f4;
-  padding-top: 80px;
-  padding-bottom: 140px;
+  background-size: cover; /* Ensure the background covers the area */
+  background-color: #eaeaea; /* Light gray for subtle contrast */
+  padding-top: 100px;
+  padding-bottom: 150px;
   margin-bottom: -80px;
+  border-radius: 15px 15px 0 0;
 }
 
 @media (min-width: 1200px) {
   .testimonials-one__head {
-    padding-top: 120px;
+    padding-top: 140px;
+    padding-bottom: 350px;
     margin-bottom: -250px;
-    padding-bottom: 310px;
   }
-}
-
-.testimonials-one__head .block-title {
-  margin-bottom: 0;
-}
-
-.testimonials-one__image {
-  position: relative;
-  z-index: 10;
-}
-
-.testimonials-one__image > img {
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .testimonials-one__content {
   text-align: center;
-  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  margin-top: -60px;
   margin-bottom: 60px;
-  background-color: #fff;
-  margin-top: -79px;
-  padding-top: 79px;
-  padding-bottom: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 40px;
+  border-radius: 10px;
   position: relative;
+  overflow: hidden;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.testimonials-one__content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.15); /* Lift effect on hover */
 }
 
 .testimonials-one__content::before {
@@ -5030,29 +5022,12 @@ h6 {
   transform: scale(1, 0);
   transform-origin: top center;
   transition: transform 500ms ease;
-}
-
-.testimonials-one__content::after {
-  content: '';
-  width: 100%;
-  height: 5px;
-  background-color: var(--thm-base);
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  z-index: 1;
+  border-radius: 10px;
 }
 
 .testimonials-one__content:hover::before {
-  transform-origin: bottom center;
   transform: scale(1, 1);
-}
-
-@media (min-width: 1200px) {
-  .testimonials-one__content {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 60px;
-  }
 }
 
 .testimonials-one__content p {
@@ -5061,55 +5036,27 @@ h6 {
   line-height: 1.8;
   color: var(--thm-color);
   margin-top: 30px;
+  z-index: 2;
   position: relative;
-  transition: all 500ms ease;
-}
-
-@media (min-width: 992px) {
-  .testimonials-one__content p {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .testimonials-one__content p {
-    font-size: 16px;
-  }
 }
 
 .testimonials-one__content h3 {
   margin: 0;
   font-family: var(--special-font);
   color: var(--thm-base);
-  line-height: 1;
-  font-size: 18px;
-  margin-bottom: 10px;
-  margin-top: 26px;
+  font-size: 20px;
+  margin-top: 20px;
+  z-index: 2;
   position: relative;
-  transition: all 500ms ease;
-}
-
-@media (min-width: 1200px) {
-  .testimonials-one__content h3 {
-    font-size: 20px;
-    margin-top: 35px;
-  }
 }
 
 .testimonials-one__content span {
   margin: 0;
   font-size: 14px;
-  color: var(--thm-color);
+  color: var(--thm-color-light); /* Use a lighter variant for subtlety */
   display: block;
-  line-height: 1;
+  z-index: 2;
   position: relative;
-  transition: all 500ms ease;
-}
-
-@media (min-width: 992px) {
-  .testimonials-one__content span {
-    font-size: 16px;
-  }
 }
 
 .testimonials-one__content:hover p,
@@ -5118,9 +5065,44 @@ h6 {
   color: #ffffff;
 }
 
+.testimonials-one__image {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 20px;
+}
+
+.testimonials-one__image > img {
+  border-radius: 50%;
+  border: 5px solid var(--thm-base);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
 .testimonials-one .tns-outer .tns-controls {
   position: relative;
-  top: -50px;
+  top: -30px;
+}
+
+.testimonials-one .tns-controls button {
+  background-color: var(--thm-base);
+  border: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 300ms ease;
+}
+
+.testimonials-one .tns-controls button:hover {
+  background-color: var(--thm-base-dark); /* Darker variant on hover */
+}
+
+.testimonials-one .tns-controls button:focus {
+  outline: none;
 }
 
 /*--------------------------------------------------------------
