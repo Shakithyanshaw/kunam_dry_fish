@@ -133,7 +133,7 @@
                 <a href="products.html">Products</a>
               </li>
 
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
           <!-- /.container -->
@@ -154,12 +154,7 @@
         ></div>
         <!-- /.page-header__bg -->
         <div class="container">
-          <h2>Contact</h2>
-          <ul class="thm-breadcrumb list-unstyled">
-            <li><a href="index.html">Home</a></li>
-            <li>/</li>
-            <li><span>Contact</span></li>
-          </ul>
+          <h2>Contact Us</h2>
           <!-- /.thm-breadcrumb list-unstyled -->
         </div>
         <!-- /.container -->
@@ -190,7 +185,7 @@
           <!-- /.block-title -->
           <form
             action="assets/inc/sendemail.php"
-            class="contact-form-validated contact-one__form"
+            class="contact-form-validated contact-one__form shadow-box"
           >
             <div class="row">
               <div class="col-md-6">
@@ -227,6 +222,24 @@
         <!-- /.container -->
       </section>
       <!-- /.contact-one -->
+
+      <!-- Add the CSS below -->
+      <style>
+        .contact-one__form.shadow-box {
+          background-color: #e8e8e8;
+          padding: 30px;
+          border-radius: 8px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+          transition: all 0.3s ease;
+          position: relative; /* Ensure background image is behind the form */
+          z-index: 1; /* Make sure the form is above the background images */
+        }
+
+        /* Optional: Hover effect for the form */
+        .contact-one__form.shadow-box:hover {
+          box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+        }
+      </style>
 
       <section class="contact-infos">
         <div class="container">
@@ -381,7 +394,7 @@
                   </li>
 
                   <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html">Contact Us</a>
                   </li>
                 </ul>
                 <!-- /.list-unstyled footer-widget__contact -->
