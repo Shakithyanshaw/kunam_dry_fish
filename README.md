@@ -21,22 +21,22 @@ The goal is to provide a simple, user-friendly website to attract and inform cus
 
 ### Home Page
 
-![Home Page](assets/images/KDF/logo.png)  
+![Home Page](kunam-dry-fish-main/kunam-dry-fish-html/assets/images/screenshots/home.png)  
 _A clean and vibrant landing page showcasing shop highlights._
 
 ### Product Listing
 
-![Product Listing](assets/images/screenshots/home)  
+![Product Listing](kunam-dry-fish-main/kunam-dry-fish-html/assets/images/screenshots/product.png)  
 _A section displaying products with prices and descriptions._
 
 ### About Page
 
-![About Page](assets/images/KDF/logo.png)  
+![About Page](kunam-dry-fish-main/kunam-dry-fish-html/assets/images/screenshots/about.png)  
 _A section providing information about Kunam Dry Fish Shop, its history, values, and commitment to quality._
 
 ### Contact Us
 
-![Contact Page](assets/images/KDF/logo.png./images/contact.png)  
+![Contact Page](kunam-dry-fish-main/kunam-dry-fish-html/assets/images/screenshots/contact.png)  
 _A form and location map for customer inquiries._
 
 ---
