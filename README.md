@@ -26,7 +26,7 @@ _A clean and vibrant landing page showcasing shop highlights._
 
 ### Product Listing
 
-![Product Listing](kunam-dry-fish-main/kunam-dry-fish-html/assets/images/screenshots/product.png)  
+![Product Listing](kunam-dry-fish-main/kunam-dry-fish-html/assets/images/screenshots/products.png)  
 _A section displaying products with prices and descriptions._
 
 ### About Page
@@ -36,7 +36,7 @@ _A section providing information about Kunam Dry Fish Shop, its history, values,
 
 ### Contact Us
 
-![Contact Page](kunam-dry-fish-main/kunam-dry-fish-html/assets/images/screenshots/contact.png)  
+![Contact Page](kunam-dry-fish-main/kunam-dry-fish-html/assets/images/screenshots/contact%20us.png)  
 _A form and location map for customer inquiries._
 
 ---
