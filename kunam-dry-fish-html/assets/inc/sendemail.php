@@ -53,7 +53,7 @@ if ($name && $senderEmail && $message) {
         $mail->Host = 'smtp.gmail.com';  // Set the SMTP server (use the correct one for your provider)
         $mail->SMTPAuth = true;
         $mail->Username = 'jeyakumarshakithyan03@gmail.com'; // Your email
-        $mail->Password = 'your app password';   // Your email password
+        $mail->Password = 'Your email password';   // Your email password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
